@@ -1,4 +1,4 @@
-('I:\\001\\mehrshad-python-begins\\student_GPA\\build\\Gpa_calculator\\PYZ-00.pyz',
+('I:\\003\\python-micro-projects\\student_GPA\\build\\Gpa_calculator\\PYZ-00.pyz',
  [('__future__', 'C:\\Python313\\Lib\\__future__.py', 'PYMODULE'),
   ('_colorize', 'C:\\Python313\\Lib\\_colorize.py', 'PYMODULE'),
   ('_compat_pickle', 'C:\\Python313\\Lib\\_compat_pickle.py', 'PYMODULE'),
