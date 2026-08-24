@@ -1,0 +1,63 @@
+# Keyboard Switcher
+
+A simple Windows desktop application built with Python and PySide6.
+
+## What It Does
+
+Keyboard Switcher monitors the active application and assigns a keyboard language to each configured profile.
+
+Example:
+
+```text
+VS Code  → English
+Opera    → Persian
+When the active application changes, the application detects the process and identifies the corresponding profile.
+Architecture
+PySide6 UI
+    ↓
+Profile A / Profile B
+    ↓
+WindowMonitor
+    ↓
+Windows API + psutil
+    ↓
+Active Application
+Technologies
+- Python
+- PySide6
+- psutil
+- pywin32
+- PyInstaller
+Project Structure
+keyboard_switcher/
+├── keyboard_switcher.py
+├── main.py
+├── main_window.py
+├── run.py
+├── requirements.txt
+└── README.md
+Development
+Create and activate a virtual environment:
+python -m venv venv
+venv\Scripts\activate
+Install dependencies:
+pip install -r requirements.txt
+Run the application:
+python run.py
+Build Windows Executable
+Install PyInstaller:
+pip install pyinstaller
+Build:
+pyinstaller --onefile --windowed --name KeyboardSwitcher run.py
+The executable will be created at:
+dist/KeyboardSwitcher.exe
+Current Status
+Implemented:
+- PySide6 desktop UI
+- Application selection
+- Profile A and Profile B
+- Keyboard language selection
+- Active application monitoring
+- Windows process detection
+- Windows executable build
+The next step is improving the actual Windows keyboard-layout switching.
